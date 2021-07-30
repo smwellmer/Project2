@@ -49,7 +49,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### MVP
 - Create and call my Contentful API
 - Home page contains Product tiles
-- Functioning links between Home and MyCart
+- Functioning links for Home and MyCart
 - Create myCart Page
 - Allow user to add items to cart
 
