@@ -14,8 +14,22 @@ Use this section to describe your final project and perhaps any links to relevan
 Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
 
 
+[API URL](https://cdn.contentful.com/spaces/0ds39ghov63b/environments/master/entries?access_token=MhC6oO1V5NEeiAYNdZRgfn8m3yrWMxgt__MEatT-oJM&content_types/product)
+
+
 ```
-{API URL: {https://cdn.contentful.com/spaces/0ds39ghov63b/environments/master/entries?access_token=MhC6oO1V5NEeiAYNdZRgfn8m3yrWMxgt__MEatT-oJM&content_types/product} }
+{data: {fields: {
+productName: "Coffee Mug",
+image: {
+sys: {
+type: "Link",
+linkType: "Asset",
+id: "6jlB4UpUPww2Kt1pDdbVUb"
+}
+},
+productPrice: 12.99,
+description: "Coffee mug made specifically for programmers. It will not work if you're not a programmer. Sorry."
+}} }
 ```
 
 
