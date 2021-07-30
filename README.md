@@ -15,7 +15,7 @@ Use this section to include info about the API you have chosen and a code snippe
 
 
 ```
-{data: {} }
+{API URL: {https://cdn.contentful.com/spaces/0ds39ghov63b/environments/master/entries?access_token=MhC6oO1V5NEeiAYNdZRgfn8m3yrWMxgt__MEatT-oJM&content_types/product} }
 ```
 
 
