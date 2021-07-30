@@ -67,7 +67,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | --- | :---: |  
 | App | This will make the initial data pull and include React Router| 
 | Header | This will render the header include the nav | 
-| Item | This will render data from App via props  |
+| Item | This will render data from API call  |
 | Button | This will contain the "add to cart" function and be placed in each item component |
 | Home | Containing all of the Items(s) |
 | Main | Container for Header, and where Home and MyCart populates |
