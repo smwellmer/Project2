@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Links
 
-## Available Scripts
+- [GitHub](https://github.com/smwellmer/Project2)
+- [Deployed on Netlify](https://swellmer-project2.netlify.app/)
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## API
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[API URL](https://cdn.contentful.com/spaces/0ds39ghov63b/environments/master/entries?access_token=MhC6oO1V5NEeiAYNdZRgfn8m3yrWMxgt__MEatT-oJM&content_types/product)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+{fields: {
+productName: "Coffee Mug",
+image: {
+sys: {
+type: "Link",
+linkType: "Asset",
+id: "6jlB4UpUPww2Kt1pDdbVUb"
+}
+},
+productPrice: 12.99,
+description: "Coffee mug made specifically for programmers. It will not work if you're not a programmer. Sorry."
+}} }
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Wireframes
 
-### `npm run eject`
+Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [Home Page Wireframe](https://i.imgur.com/gIJwrGp.jpg)
+- [MyCart Page Wireframe](https://i.imgur.com/4AxYRTW.jpg)
+- [coffeeVERSE React Architecture](https://i.imgur.com/EBi92Mt.jpg)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### MVP/PostMVP - 5min
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-## Learn More
+#### MVP
+- Create and call my Contentful API
+- Home page contains Product tiles
+- Functioning links for Home and MyCart
+- Create myCart Page
+- Allow user to add items to cart
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### PostMVP
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- create search feature
+- Categorize types of products on main page
 
-### Code Splitting
+## Components
+##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
-### Analyzing the Bundle Size
+| Component | Description | 
+| --- | :---: |  
+| App | This will make the initial data pull and include React Router| 
+| Header | This will render the header include the nav | 
+| Item | This will render data from API call  |
+| Button | This will contain the "add to cart" function and be placed in each item component |
+| Home | Containing all of the Items |
+| Main | Container for Header, and where Home and MyCart populate |
+| MyCart | Where all of the "added" items will be listed  |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Component | Priority | Estimated Time | Time Invested | 
+| --- | :---: |  :---: | :---: |
+| Planning (Wireframe, Architecture, Timetable) | H | 3hrs| 3hrs | 
+| Creating data in API | H | 3hrs | tbd |
+| Create Header with Links | H | 2.5hrs| tbd |
+| Create Home Page/Component | M | 3hrs| tbd |
+| Create MyCart Page/Component | M | 3hrs| tbd |
+| Create Item Component | H | 1.5hrs| tbd |
+| Styling | L | 3hrs| tbd |
+| Total | H | 19hrs| tbd |
 
-### Advanced Configuration
+## Additional Libraries
+ Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Code Snippet
 
-### Deployment
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+function reverse(string) {
+	// here is the code to reverse a string of text
+}
+```
