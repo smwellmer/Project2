@@ -1,8 +1,12 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 
 const Header = (props) => {
-    return <h1>Header Component</h1>
+    return <nav>
+        <Link to="/">Home</Link>
+        <Link to="MyCart">My Cart</Link>
+    </nav>
 }
 
 export default Header
