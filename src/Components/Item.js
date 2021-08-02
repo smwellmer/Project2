@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './Button'
 
 const Item = (props) => {
 
@@ -9,7 +10,7 @@ const Item = (props) => {
                 <img src={props.url} alt={props.name}/>
                 <div>{props.description}</div>
                 <div>{props.price}</div>
-                <button>Add to Cart</button>
+                 <Button />
 
            </div>
         )

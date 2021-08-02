@@ -1,12 +1,27 @@
 import React from 'react'
+import Button from './Button'
 
 const Inventory = (props) => {
-    return <h1>Inventory Component</h1>
-    // <div>
-    //     {props.Inventory.map((item, index) => {
-    //         return <h1>{item.name}</h1>
-    //     })}
-    // </div>
+    console.log('inventory data', props)
+    return (
+        <div className='inventory'>
+            {props.inventoryList.map((product, index) => {
+                return (
+                <>
+                <div key={index}>
+                <h1>{product.name}</h1>
+                <img src={product.img} alt={product.name}/>
+                <div>{product.desc}</div>
+                <div>${product.price}</div>
+                </div>
+                 <Button />
+                </>
+                )
+            })}
+        </div>
+    )
+    
 }
 
 export default Inventory
+//onClick = {() => props.selectProduct()}
