@@ -6,12 +6,11 @@ const Item = (props) => {
     const loaded = () => {
         return (
             <div className="item">
-                <div>{props.selected.name}text</div>
+                <div>{props.selected.name}</div>
                 <img src={props.selected.img} alt={props.selected.name}/>
                 <div>{props.selected.description}</div>
                 <div>{props.selected.price}</div>
                 <Button dispatch={props.removeFromCart} product={props.product} label='Remove From Cart'/>
-
            </div>
         )
      }

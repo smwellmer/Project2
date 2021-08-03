@@ -5,6 +5,7 @@ import Header from './Components/Header'
 import MyCart from './Pages/MyCart';
 import Home from './Pages/Home'
 import Footer from './Components/Footer'
+import './index.scss'
 
 function App() {
 
