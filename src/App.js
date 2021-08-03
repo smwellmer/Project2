@@ -31,6 +31,7 @@ function App() {
   }
 
     const addToCart = (product) => {
+      console.log("add to cart", product)
       setCart([...cart, product])
     }
   
@@ -52,7 +53,7 @@ function App() {
             <Home inventoryList = {inventoryList} addToCart={addToCart}/>
           </Route>
           <Route path="/MyCart">
-           <MyCart cart={cart} remove={removeFromCart}/>
+           <MyCart cart={cart} removeFromCart={removeFromCart}/>
           </Route>
         </Switch>
         <Footer />

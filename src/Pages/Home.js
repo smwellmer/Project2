@@ -6,7 +6,7 @@ const Home = (props) => {
 
 
     return <div className="home">
-            <Inventory inventoryList={props.inventoryList} />
+            <Inventory inventoryList={props.inventoryList} addToCart={props.addToCart}/>
         </div>
 }
 

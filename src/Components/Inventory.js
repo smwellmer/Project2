@@ -14,7 +14,7 @@ const Inventory = (props) => {
                 <div>{product.desc}</div>
                 <div>${product.price}</div>
                 </div>
-                 <Button />
+                 <Button dispatch={props.addToCart} product={product} label='add to cart'/>
                 </>
                 )
             })}
