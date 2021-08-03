@@ -12,13 +12,18 @@ $secondary: #1f1e1c;
 }
 
 .header {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: $primary;
+    width: 100%;
+    transition: 0.2s;
 }
 
 .link {
+    font-size: 1.5em;
     text-decoration: none;
     color: $secondary;
     font-family: 'Georama', sans-serif;
@@ -29,6 +34,50 @@ $secondary: #1f1e1c;
     font-family: 'Georama', sans-serif;
 }
 
-.item {
-    border: 1px solid black;
+.inventory {
+    padding-top: 125px;
+    font-family: 'Georama', sans-serif;
 }
+
+.item {
+ 
+    padding: 1.5em;
+    
+}
+
+.itemName {
+    font-size: 1.5em;
+    padding-bottom: .75em;
+}
+
+.item img{
+    height: 10em;
+    width: 9em;
+    padding-bottom: .75em;
+}
+
+.itemDesc {
+    padding-bottom: .5em;
+}
+.itemPrice {
+    padding-bottom: .5em;
+}
+.button {
+    width: 10em;
+    border-radius: 12px;
+    font-family: 'Georama', sans-serif;
+    background-color: $primary;
+    color: white;
+  }
+  
+.button:hover {
+    color: black;
+    background-color: white; 
+    border: 2px solid black;
+  }
+// Media Queries //
+  @media screen and (min-width: 768px){
+
+
+
+  }

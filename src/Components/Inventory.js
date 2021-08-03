@@ -7,15 +7,15 @@ const Inventory = (props) => {
         <div className='inventory'>
             {props.inventoryList.map((product, index) => {
                 return (
-                <>
+                <div className='item'>
                 <div key={index}>
-                <h1>{product.name}</h1>
+                <div className="itemName">{product.name}</div>
                 <img src={product.img} alt={product.name}/>
-                <div>{product.desc}</div>
-                <div>${product.price}</div>
+                <div className="itemDesc">{product.desc}</div>
+                <div className="itemPrice">${product.price}</div>
                 </div>
-                 <Button dispatch={props.addToCart} product={product} label='Add to Cart'/>
-                </>
+                 <Button className="button" dispatch={props.addToCart} product={product} label='Add to Cart'/>
+                </div>
                 )
             })}
         </div>
