@@ -10,7 +10,7 @@ const Item = (props) => {
                 <img src={props.selected.img} alt={props.selected.name}/>
                 <div>{props.selected.description}</div>
                 <div>{props.selected.price}</div>
-                <Button dispatch={props.remove} product={props.product} label='remove from cart'/>
+                <Button dispatch={props.removeFromCart} product={props.product} label='Remove From Cart'/>
 
            </div>
         )

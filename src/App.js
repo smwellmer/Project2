@@ -36,7 +36,7 @@ function App() {
     }
   
     const removeFromCart = (product) => {
-      const index = cart.findIndex((thing) =>(product.id === thing.id))
+      const index = cart.findIndex((thing) =>(product === thing))
       const updatedArray = [...cart]
       updatedArray.splice(index, 1)
       setCart(updatedArray)

@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
 
 const Inventory = (props) => {
-    //console.log('inventory data', props)
+
     return (
         <div className='inventory'>
             {props.inventoryList.map((product, index) => {
@@ -14,7 +14,7 @@ const Inventory = (props) => {
                 <div>{product.desc}</div>
                 <div>${product.price}</div>
                 </div>
-                 <Button dispatch={props.addToCart} product={product} label='add to cart'/>
+                 <Button dispatch={props.addToCart} product={product} label='Add to Cart'/>
                 </>
                 )
             })}
@@ -24,4 +24,3 @@ const Inventory = (props) => {
 }
 
 export default Inventory
-//onClick = {() => props.selectProduct()}
