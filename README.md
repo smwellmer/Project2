@@ -79,13 +79,14 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invested | 
 | --- | :---: |  :---: | :---: |
 | Planning (Wireframe, Architecture, Timetable) | H | 3hrs| 3hrs | 
-| Creating data in API | H | 3hrs | tbd |
-| Create Header with Links | H | 2.5hrs| tbd |
-| Create Home Page/Component | M | 3hrs| tbd |
+| Creating data in API | H | 3hrs | 1.5hrs |
+| Create Header with Links | H | 2.5hrs| 1 hr |
+| Create Home Page/Component | M | 3hrs| 2hrs |
 | Create MyCart Page/Component | M | 3hrs| tbd |
 | Create Item Component | H | 1.5hrs| tbd |
+| Routing & add/removeFromCart functions| H | 3hrs| tbd |
 | Styling | L | 3hrs| tbd |
-| Total | H | 19hrs| tbd |
+| Total | H | 22 hrs| tbd |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
