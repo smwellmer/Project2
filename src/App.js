@@ -19,7 +19,10 @@ function App() {
       return {
         id: item.sys.id,
         name: item.fields.productName,
-        img: data.includes.Asset[index].fields.file.url,
+        img: data.includes.Asset.filter((img) => {
+          let id = img.sys.id
+          return id === item.fields.image.sys.id
+        })[0].fields.file.url,
         desc: item.fields.description,
         price: item.fields.productPrice
       }
@@ -46,10 +49,10 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/">
-            <Home inventoryList = {inventoryList}/>
+            <Home inventoryList = {inventoryList} addToCart={addToCart}/>
           </Route>
           <Route path="/MyCart">
-           <MyCart />
+           <MyCart cart={cart} remove={removeFromCart}/>
           </Route>
         </Switch>
         <Footer />

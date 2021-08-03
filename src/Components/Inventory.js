@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
 
 const Inventory = (props) => {
-    console.log('inventory data', props)
+    //console.log('inventory data', props)
     return (
         <div className='inventory'>
             {props.inventoryList.map((product, index) => {
