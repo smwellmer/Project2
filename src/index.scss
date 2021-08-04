@@ -1,10 +1,10 @@
 
-$primary:#00afb9;
+// alabaster
+$primary:#e8e4d9;
+// Eerie Black
 $secondary: #1f1e1c;
-
-// * {
-//     border: 1px solid;
-// }
+$darksienna: #520000;
+$marigold: #eca72c;
 
 
 .logo {
@@ -15,11 +15,12 @@ $secondary: #1f1e1c;
     position: fixed;
     top: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: $primary;
+    background-image: url("https://images.unsplash.com/photo-1472983131032-23a243d662eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80");
     width: 100%;
     transition: 0.2s;
+    border-bottom: 4px  $darksienna;
 }
 
 .link {
@@ -30,19 +31,28 @@ $secondary: #1f1e1c;
 }
 
 .footer {
-    background-color: $primary;
     font-family: 'Georama', sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #efb857;
+    color: $secondary;
+    text-align: center;
 }
 
 .inventory {
+    
+    padding-top: 125px;
+    font-family: 'Georama', sans-serif;
+}
+.mycart {
     padding-top: 125px;
     font-family: 'Georama', sans-serif;
 }
 
 .item {
- 
-    padding: 1.5em;
-    
+    padding: 2em;
 }
 
 .itemName {
@@ -67,17 +77,71 @@ $secondary: #1f1e1c;
     border-radius: 12px;
     font-family: 'Georama', sans-serif;
     background-color: $primary;
-    color: white;
+    color: black;
   }
   
 .button:hover {
     color: black;
-    background-color: white; 
+    background-color: $marigold; 
     border: 2px solid black;
   }
+////////////////////////////////////////////////////////////
+/// found a How-To for this Hamburger menu at: 
+// https://ibaslogic.com/how-to-add-hamburger-menu-in-react/
+/////////////////////////////////////////////////////////////
+  
+  .menuNav {
+    overflow-y: scroll;
+    list-style: none;
+    position: fixed;
+    top: 2vh;
+    background: transparent;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    overflow: hidden;
+    max-width: 250px;
+    z-index: 9;
+  }
+  
+  .menuNav.showMenu {
+    width: 80%;
+  }
+  
+  .menuNav.showMenu.ul{
+      margin: 0;
+  }
+
+  a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .menuNav li:first-child {
+    margin-top: 7rem;
+   
+  }
+
+  .navbutton {
+     background: transparent;
+     border: none;
+  }
+
+  .link{
+      color: $marigold;
+  }
+
+////////////////////////////////////////////////////
+
 // Media Queries //
   @media screen and (min-width: 768px){
 
-
+    .menuNav{
+        display: none;
+    }
 
   }
