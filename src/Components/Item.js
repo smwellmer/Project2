@@ -10,9 +10,9 @@ const Item = (props) => {
                     <div className="itemName">{props.selected.name}</div>
                     <div className="itemDesc">{props.selected.description}</div>
                     <div className="itemPrice">{props.selected.price}</div>
-                    <Button className="button" dispatch={props.removeFromCart} product={props.product} label='Remove From Cart'/>
                   </div>
                   <img src={props.selected.img} alt={props.selected.name}/>
+                  <Button className="button" dispatch={props.removeFromCart} product={props.product} label='Remove From Cart'/>
            </div>
         )
      }

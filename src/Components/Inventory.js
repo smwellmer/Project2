@@ -5,7 +5,6 @@ const Inventory = (props) => {
 
     return (
         <div className='inventory'>
-             <h2 className='inventoryheader'>Inventory</h2>
             {props.inventoryList.map((product, index) => {
                 return (
                     <div className='item'>

@@ -3,8 +3,6 @@
 $primary:#e8e4d9;
 // Eerie Black
 $secondary: #1f1e1c;
-$darksienna: #520000;
-$marigold: #eca72c;
 
 
 .logo {
@@ -20,7 +18,6 @@ $marigold: #eca72c;
     background-image: url("https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
     width: 100%;
     transition: 0.2s;
-    border-bottom: 4px  $darksienna;
 }
 
 .link {
@@ -51,52 +48,54 @@ $marigold: #eca72c;
 .mycart {
     padding-top: 135px;
     font-family: 'Georama', sans-serif;
+    max-width: 450px;
+    margin: 0 auto;
 }
 
 .item {
     width: 80%;
     margin: 1em auto;
     padding: 1em;
-
     box-shadow: 0 15px 30px 1px grey;
 	background: rgba(255, 255, 255, 0.90);
 	text-align: center;
 	border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 .itemName {
-    text-align: center;
     font-size: 1.5em;
-    text-align: center;
     margin-bottom: .75em;
+    margin: 0 auto;
 }
 
 .item img {
     width: 9em;
-   
+    margin: 0 auto;
 }
 
 .itemDesc {
-    padding-left: 2em;
     width: 12em;
-    text-align: center;
+    margin: 0 auto;
 }
 .itemPrice {
     padding-top: 1em;
-    text-align: center;
 }
 .button {
     width: 10em;
     border-radius: 12px;
     font-family: 'Georama', sans-serif;
-    background-color: $darksienna;
+    background-color: #436436;
     color: white;
+    margin: 0 auto;
   }
   
 .button:hover {
     color: black;
-    background-color: white; 
+    background-color: #c5dbbd;
     
   }
 ////////////////////////////////////////////////////////////
@@ -147,16 +146,22 @@ $marigold: #eca72c;
         transform: translateX(0%);
         background: transparent;
         display: flex;
-      }
-      
-    .itemcontent{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
     }
-  
-    .itemimage {
-        align-items: center; 
-       }
-    
+      
+    .inventory {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .inventory {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
 }
