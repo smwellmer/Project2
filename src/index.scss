@@ -17,7 +17,7 @@ $marigold: #eca72c;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url("https://images.unsplash.com/photo-1472983131032-23a243d662eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80");
+    background-image: url("https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
     width: 100%;
     transition: 0.2s;
     border-bottom: 4px  $darksienna;
@@ -36,59 +36,69 @@ $marigold: #eca72c;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #dfd8d8;
-    color: $secondary;
+    background-color: black;
+    color: $primary;
     text-align: center;
 }
 
 .inventory {
+    display: flex;
+    flex-direction: column;
     padding-top: 135px;
     font-family: 'Georama', sans-serif;
 }
 
-.inventoryheader{
-    background-color: $marigold;
-}
 .mycart {
     padding-top: 135px;
     font-family: 'Georama', sans-serif;
 }
-.mycartheader{
-    background-color: $marigold;
-}
+
 .item {
-    padding: 2em;
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em;
+
+    box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
 }
 
 .itemName {
+    text-align: center;
     font-size: 1.5em;
-    padding-bottom: .75em;
+    text-align: center;
+    margin-bottom: .75em;
 }
 
-.item img{
-    height: 10em;
+.item img {
     width: 9em;
-    padding-bottom: .75em;
+    float: right;
 }
 
 .itemDesc {
-    padding-bottom: .5em;
+    
+    width: 12em;
+    text-align: center;
 }
 .itemPrice {
-    padding-bottom: .5em;
+    padding-top: 1em;
+    text-align: center;
 }
 .button {
+    
     width: 10em;
     border-radius: 12px;
     font-family: 'Georama', sans-serif;
-    background-color: $primary;
-    color: black;
+    background-color: $darksienna;
+    color: white;
+    
   }
   
 .button:hover {
     color: black;
-    background-color: $marigold; 
-    border: 2px solid black;
+    background-color: white; 
+    
   }
 ////////////////////////////////////////////////////////////
 /// found a How-To for this Hamburger menu at: 
@@ -96,13 +106,14 @@ $marigold: #eca72c;
 /////////////////////////////////////////////////////////////
   
   .menuNav {
-    overflow-y: scroll;
+    transform: translateX(-400%);
     background: transparent;
-    width: 0;
+
   }
   
   .menuNav.showMenu {
     width: 100%;
+    transform: translateX(-40%);
   }
 
   a {
@@ -122,10 +133,11 @@ $marigold: #eca72c;
   .navbutton {
      background: transparent;
      border: none;
+     color: white;
   }
 
   .link{
-      color: $marigold;
+      color: $primary;
   }
 
 ////////////////////////////////////////////////////

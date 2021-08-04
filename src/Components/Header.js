@@ -28,7 +28,7 @@ const Header = (props) => {
              <Link className="link" to="/" onClick={() => closeMenu()}>Home</Link>
              <Link className="link" to="MyCart" onClick={() => closeMenu()}>My Cart</Link>
          </ul>
-        <img className='logo' src='logo-transparent.png' alt='coffeeverse logo'/>
+        <img className='logo' src='whitelogo.png' alt='coffeeverse logo'/>
     </nav>
 }
 
