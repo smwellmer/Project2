@@ -8,15 +8,17 @@ const Inventory = (props) => {
              <h2 className='inventoryheader'>Inventory</h2>
             {props.inventoryList.map((product, index) => {
                 return (
-                <div className='item'>
-                <div key={index}>
-                <div className="itemName">{product.name}</div>
-                <img src={product.img} alt={product.name}/>
-                <div className="itemDesc">{product.desc}</div>
-                <div className="itemPrice">${product.price}</div>
-                </div>
-                 <Button className="button" dispatch={props.addToCart} product={product} label='Add to Cart'/>
-                </div>
+                    <div className='item'>
+                    <div className='itemcontent'>
+                        <div key={index}></div>
+                        <div className="itemName">{product.name}</div>
+                        <div className="itemDesc">{product.desc}</div>
+                        <div className="itemPrice">${product.price}</div>
+                    </div>
+                    <img className='itemimage' src={product.img} alt={product.name}/>  
+                    <Button className="button" dispatch={props.addToCart} product={product} label='Add to Cart'/>
+                    </div>
+                
                 )
             })}
         </div>

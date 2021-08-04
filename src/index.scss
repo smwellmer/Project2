@@ -26,7 +26,7 @@ $marigold: #eca72c;
 .link {
     font-size: 1.5em;
     text-decoration: none;
-    color: $secondary;
+    color: white;
     font-family: 'Georama', sans-serif;
 }
 
@@ -64,6 +64,7 @@ $marigold: #eca72c;
 	border-radius: 5px;
 }
 
+
 .itemName {
     text-align: center;
     font-size: 1.5em;
@@ -73,11 +74,11 @@ $marigold: #eca72c;
 
 .item img {
     width: 9em;
-    float: right;
+   
 }
 
 .itemDesc {
-    
+    padding-left: 2em;
     width: 12em;
     text-align: center;
 }
@@ -86,13 +87,11 @@ $marigold: #eca72c;
     text-align: center;
 }
 .button {
-    
     width: 10em;
     border-radius: 12px;
     font-family: 'Georama', sans-serif;
     background-color: $darksienna;
     color: white;
-    
   }
   
 .button:hover {
@@ -136,17 +135,28 @@ $marigold: #eca72c;
      color: white;
   }
 
-  .link{
-      color: $primary;
-  }
-
 ////////////////////////////////////////////////////
 
 // Media Queries //
   @media screen and (min-width: 768px){
 
-    .menuNav{
+    .navbutton {
         display: none;
     }
-
-  }
+    .menuNav {
+        transform: translateX(0%);
+        background: transparent;
+        display: flex;
+      }
+      
+    .itemcontent{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+  
+    .itemimage {
+        align-items: center; 
+       }
+    
+}

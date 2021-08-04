@@ -6,11 +6,13 @@ const Item = (props) => {
     const loaded = () => {
         return (
             <div className='item'>
-                <div className="itemName">{props.selected.name}</div>
-                <img src={props.selected.img} alt={props.selected.name}/>
-                <div className="itemDesc">{props.selected.description}</div>
-                <div className="itemPrice">{props.selected.price}</div>
-                <Button className="button" dispatch={props.removeFromCart} product={props.product} label='Remove From Cart'/>
+                  <div className='itemcontent'>
+                    <div className="itemName">{props.selected.name}</div>
+                    <div className="itemDesc">{props.selected.description}</div>
+                    <div className="itemPrice">{props.selected.price}</div>
+                    <Button className="button" dispatch={props.removeFromCart} product={props.product} label='Remove From Cart'/>
+                  </div>
+                  <img src={props.selected.img} alt={props.selected.name}/>
            </div>
         )
      }
