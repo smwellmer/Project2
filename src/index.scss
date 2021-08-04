@@ -36,21 +36,26 @@ $marigold: #eca72c;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #efb857;
+    background-color: #dfd8d8;
     color: $secondary;
     text-align: center;
 }
 
 .inventory {
-    
-    padding-top: 125px;
-    font-family: 'Georama', sans-serif;
-}
-.mycart {
-    padding-top: 125px;
+    padding-top: 135px;
     font-family: 'Georama', sans-serif;
 }
 
+.inventoryheader{
+    background-color: $marigold;
+}
+.mycart {
+    padding-top: 135px;
+    font-family: 'Georama', sans-serif;
+}
+.mycartheader{
+    background-color: $marigold;
+}
 .item {
     padding: 2em;
 }
@@ -92,24 +97,12 @@ $marigold: #eca72c;
   
   .menuNav {
     overflow-y: scroll;
-    list-style: none;
-    position: fixed;
-    top: 2vh;
     background: transparent;
-    left: 0;
-    bottom: 0;
     width: 0;
-    overflow: hidden;
-    max-width: 250px;
-    z-index: 9;
   }
   
   .menuNav.showMenu {
-    width: 80%;
-  }
-  
-  .menuNav.showMenu.ul{
-      margin: 0;
+    width: 100%;
   }
 
   a {
