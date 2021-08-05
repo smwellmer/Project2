@@ -21,6 +21,7 @@ const Inventory = (props) => {
                     </div>
                 )
             })}
+    
         </div>
         </>
     )

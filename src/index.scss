@@ -20,12 +20,19 @@ $secondary: #1f1e1c;
     transition: 0.2s;
 }
 
-.link {
+.link{
     font-size: 1.5em;
     text-decoration: none;
     color: white;
     font-family: 'Georama', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
+
+
 
 .footer {
     font-family: 'Georama', sans-serif;
@@ -39,33 +46,34 @@ $secondary: #1f1e1c;
 }
 
 .inventory {
-    margin-top: 3em;
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
     padding-top: 135px;
     font-family: 'Georama', sans-serif;
 }
 #inventoryTitle {
-    top: 20%;
+    top: 4.4em;
     position: fixed;
     display: flex;
-    padding-left: 30px;
     flex-direction: center;
     background-color: #436436;
     width: 100%;
+    padding: .5em;
 }
 #mycartTitle {
-    top: 20%;
+    top: 4.4em;
+    left: 0;
     position: fixed;
     display: flex;
-    padding-left: 30px;
     flex-direction: center;
     background-color: #436436;
     width: 100%;
+    padding: .5em;
 }
 
 .mycart {
-    padding-top: 135px;
+    padding-top: 175px;
     font-family: 'Georama', sans-serif;
     max-width: 450px;
     margin: 0 auto;
@@ -168,31 +176,31 @@ $secondary: #1f1e1c;
     }
       
     .inventory {
-        margin-top: 1em;
+        margin-top: 2em;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
 
     #inventoryTitle {
-        top: 17%;
+        top: 4.3em;
         position: fixed;
         display: flex;
-        padding-left: 30px;
         flex-direction: center;
         background-color: #436436;
         width: 100%;
+        padding: .5em;
     }
 
     #mycartTitle {
         left: 0;
-        top: 17%;
+        top: 4.2em;
         position: fixed;
         display: flex;
-        padding-left: 30px;
         flex-direction: center;
         background-color: #436436;
         width: 100%;
+        padding: .5em;
     }
 
 }
@@ -205,24 +213,27 @@ $secondary: #1f1e1c;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
+    .mycart {
+        margin-top: 2em;
+    }
     #inventoryTitle {
         font-size: 1.8em;
-        top: 12%;
+        top: 3.4em;
         position: fixed;
         display: flex;
-        padding-left: 30px;
         flex-direction: center;
         background-color: #436436;
         width: 100%;
+        padding: .5em;
     }
     #mycartTitle {
         font-size: 1.8em;
-        top: 12%;
+        top: 3.4em;
         position: fixed;
         display: flex;
-        padding-left: 30px;
         flex-direction: center;
         background-color: #436436;
         width: 100%;
+        padding: .5em;
     }
 }
