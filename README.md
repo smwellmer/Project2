@@ -82,11 +82,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Creating data in API | H | 3hrs | 1.5hrs |
 | Create Header with Links | H | 2.5hrs| 1 hr |
 | Create Home Page/Component | M | 3hrs| 2hrs |
-| Create MyCart Page/Component | M | 3hrs| tbd |
-| Create Item Component | H | 1.5hrs| tbd |
-| Routing & add/removeFromCart functions| H | 3hrs| tbd |
-| Styling | L | 3hrs| tbd |
-| Total | H | 22 hrs| tbd |
+| Create MyCart Page/Component | M | 3hrs| 2hrs |
+| Create Item Component | H | 1.5hrs| 1hr |
+| Routing & add/removeFromCart functions| H | 3hrs| 5hrs |
+| Styling | L | 3hrs| 8hrs |
+| Total | H | 22 hrs| 23.5 hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
