@@ -4,7 +4,9 @@ import Button from './Button'
 const Inventory = (props) => {
 
     return (
+        <>
         <div className='inventory'>
+        <h2 id='inventoryTitle'>Inventory</h2>
             {props.inventoryList.map((product, index) => {
                 return (
                     <div className='item'>
@@ -17,10 +19,10 @@ const Inventory = (props) => {
                     <img className='itemimage' src={product.img} alt={product.name}/>  
                     <Button className="button" dispatch={props.addToCart} product={product} label='Add to Cart'/>
                     </div>
-                
                 )
             })}
         </div>
+        </>
     )
     
 }

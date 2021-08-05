@@ -39,10 +39,29 @@ $secondary: #1f1e1c;
 }
 
 .inventory {
+    margin-top: 3em;
     display: flex;
     flex-direction: column;
     padding-top: 135px;
     font-family: 'Georama', sans-serif;
+}
+#inventoryTitle {
+    top: 20%;
+    position: fixed;
+    display: flex;
+    padding-left: 30px;
+    flex-direction: center;
+    background-color: #436436;
+    width: 100%;
+}
+#mycartTitle {
+    top: 20%;
+    position: fixed;
+    display: flex;
+    padding-left: 30px;
+    flex-direction: center;
+    background-color: #436436;
+    width: 100%;
 }
 
 .mycart {
@@ -149,9 +168,31 @@ $secondary: #1f1e1c;
     }
       
     .inventory {
+        margin-top: 1em;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #inventoryTitle {
+        top: 17%;
+        position: fixed;
+        display: flex;
+        padding-left: 30px;
+        flex-direction: center;
+        background-color: #436436;
+        width: 100%;
+    }
+
+    #mycartTitle {
+        left: 0;
+        top: 17%;
+        position: fixed;
+        display: flex;
+        padding-left: 30px;
+        flex-direction: center;
+        background-color: #436436;
+        width: 100%;
     }
 
 }
@@ -159,9 +200,29 @@ $secondary: #1f1e1c;
 @media screen and (min-width: 1024px){
 
     .inventory {
+        margin-top: 3em;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
-
+    #inventoryTitle {
+        font-size: 1.8em;
+        top: 12%;
+        position: fixed;
+        display: flex;
+        padding-left: 30px;
+        flex-direction: center;
+        background-color: #436436;
+        width: 100%;
+    }
+    #mycartTitle {
+        font-size: 1.8em;
+        top: 12%;
+        position: fixed;
+        display: flex;
+        padding-left: 30px;
+        flex-direction: center;
+        background-color: #436436;
+        width: 100%;
+    }
 }
